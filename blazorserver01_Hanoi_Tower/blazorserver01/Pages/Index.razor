@@ -1,0 +1,55 @@
+﻿@page "/towers"
+
+<h1>Towers of Hanoi</h1>
+
+<p>Current count: @currentCount</p>
+
+<svg width="1500" height="500">
+
+    <g id="r1" fill="@r1.color" @onclick="() => TowerClick(r1)">
+        <rect x="100" y="200" width="30" height="300" />
+        <rect x="30" y="470" width="180" height="30" />
+    </g>
+
+    <g id="r2" fill="@r2.color" @onclick="() => TowerClick(r2)">
+        <rect x="400" y="200" width="30" height="300" />
+        <rect x="330" y="470" width="180" height="30" />
+    </g>
+
+    <g id="r3" fill="@r3.color" @onclick="() => TowerClick(r3)">
+        <rect x="700" y="200" width="30" height="300" />
+        <rect x="630" y="470" width="180" height="30" />
+    </g>
+
+</svg>
+
+@code {
+    private int currentCount = 0;
+    List<Data.Rectangle> items = new List<Data.Rectangle>();
+    public Data.Rectangle r1 = new Data.Rectangle(1, "black");
+    public Data.Rectangle r2 = new Data.Rectangle(2, "black");
+    public Data.Rectangle r3 = new Data.Rectangle(3, "black");
+
+    public void listCreate()
+    {
+        items.Add(r1);
+        items.Add(r2);
+        items.Add(r3);
+    }
+    private void TowerClick(Data.Rectangle obj)
+    {
+        if (obj.color == "black")
+        {
+            obj.color = "blue";
+        }
+        else
+        {
+            obj.color = "black";
+        }
+    }
+    public Index()
+    {
+        listCreate();
+    }
+
+}
