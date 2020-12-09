@@ -1,13 +1,35 @@
 ﻿@page "/counter"
 @using Npgsql
 <h1>Counter</h1>
-<p>Current total of records: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
+<button class="btn btn-primary" @onclick="IncrementCount">Running Tasks</button>
+<hr>
+@if(data!=null){
+    @if(data.HasRows){
+        int tot=0;
+        <table border="1">
+        <tr><td>Id</td><td>Task</td><td>On charge</td><td>Deadline</td></tr>
+        @while(data.Read()){
+            tot++;
+            <tr style="font-size:9">
+            <td>@(data.GetInt32(0))</td>
+            <td>@(data.GetString(1))</td>
+            <td>@(data.GetString(2))</td>
+            <td>@(data.GetString(3))</td>
+            </tr>
+        }
+        </table>
+        <p>Total of Running Tasks: @tot</p>
+    }
+    else{
+        <h3>No Running Tasks</h3>
+    }
+}
 @code {
-    private Int64 currentCount = 0;
+    //private Int64 currentCount = 0;
     private string con;
+    private NpgsqlDataReader data=null;
+    private NpgsqlConnection connLink;
 
     private void IncrementCount()
     {
@@ -17,10 +39,14 @@
         con += "Database=adv_prog;";
         NpgsqlConnection connLink = new NpgsqlConnection(con);
         connLink.Open();
-        string sql = "SELECT COUNT(*) FROM task;";
+        string sql = "SELECT ";
+        sql+=" task_id, taskname, responsible, ";
+        sql+=" to_char(deadline,'DD/MON/YYYY') ";
+        sql+=" FROM task WHERE status='Running';";
         NpgsqlCommand command = new NpgsqlCommand(sql, connLink);
+        data=command.ExecuteReader();
         // This obtains the value of the first column in the first record
-        currentCount = (Int64)command.ExecuteScalar();
-        connLink.Close();
+        //currentCount = (Int64)command.ExecuteScalar();
+        //connLink.Close();
     }
 }
