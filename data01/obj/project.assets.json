@@ -74,7 +74,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Npgsql >= *"
+      "Npgsql >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -120,7 +120,7 @@
         "dependencies": {
           "Npgsql": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[5.0.0, )"
           }
         },
         "imports": [

@@ -1,16 +1,26 @@
 ﻿@page "/counter"
-
+@using Npgsql
 <h1>Counter</h1>
-
-<p>Current count: @currentCount</p>
+<p>Current total of records: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
-    private int currentCount = 0;
+    private Int64 currentCount = 0;
+    private string con;
 
     private void IncrementCount()
     {
-        currentCount++;
+        con = "Server=209.126.96.59;";
+        con += "User Id=u107627;";
+        con += "Password=FUW9ESS8;";
+        con += "Database=adv_prog;";
+        NpgsqlConnection connLink = new NpgsqlConnection(con);
+        connLink.Open();
+        string sql = "SELECT COUNT(*) FROM task;";
+        NpgsqlCommand command = new NpgsqlCommand(sql, connLink);
+        // This obtains the value of the first column in the first record
+        currentCount = (Int64)command.ExecuteScalar();
+        connLink.Close();
     }
 }
