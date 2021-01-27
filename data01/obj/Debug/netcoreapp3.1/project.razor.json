@@ -45,6 +45,39 @@
         }
       },
       {
+        "HashCode": -169846455,
+        "Kind": "Components.Component",
+        "Name": "data01.Pages.Counter",
+        "AssemblyName": "data01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "data01.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -1201520011,
+        "Kind": "Components.Component",
+        "Name": "data01.Pages.Counter",
+        "AssemblyName": "data01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "data01.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "data01.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 727531952,
         "Kind": "Components.Component",
         "Name": "data01.Pages.Error",

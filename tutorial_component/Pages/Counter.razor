@@ -1,0 +1,20 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+<hr>
+<Graph values="20,30,40,50,60,70,80,90" colors="#339090, #903378, #a3a322, #45a3b4, #456712, #777666, #986144, #555666"
+    titles="coal,cotton,oil,wood,brick,wool,silver,NaN" />
+<hr>
+<hr>
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

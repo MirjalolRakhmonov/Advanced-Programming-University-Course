@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\blazorserver01.csproj",
+  "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\blazorserver01.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -140,6 +140,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "blazorserver01.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2047465583,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.HanoiTower",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "HanoiTower"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.HanoiTower"
+        }
+      },
+      {
+        "HashCode": -1604045936,
+        "Kind": "Components.Component",
+        "Name": "blazorserver01.Pages.HanoiTower",
+        "AssemblyName": "blazorserver01",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazorserver01.Pages.HanoiTower"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazorserver01.Pages.HanoiTower",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -14739,59 +14772,59 @@
   "RootNamespace": "blazorserver01",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\Pages\\Index.razor",
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\Pages\\FetchData.razor",
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\Pages\\FetchData.razor",
       "TargetPath": "Pages\\FetchData.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\Pages\\Error.razor",
-      "TargetPath": "Pages\\Error.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\Pages\\_Host.cshtml",
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\App.razor",
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\Shared\\MainLayout.razor",
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\Pages\\HanoiTower.razor",
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\Pages\\HanoiTower.razor",
       "TargetPath": "Pages\\HanoiTower.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\blazorserver01\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\Pages\\Counter.razor",
+      "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\Pages\\Error.razor",
+      "TargetPath": "Pages\\Error.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\e6530\\source\\repos\\MyRepositories\\Advanced Programming University Course\\OO C#\\Second part\\blazorserver01_Hanoi_Tower\\blazorserver01\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.2"

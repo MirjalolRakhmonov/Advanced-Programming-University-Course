@@ -1,0 +1,47 @@
+@page "/Graph/{values; colors}"
+<svg width="@(n*50+20)" height="200">
+    @for (var i = 0; i < n; i++)
+    {
+
+        <rect x="@(10+i*60)" y="@(160-h[i])" width="15" height="@(h[i])" style="fill:@(col[i])" />
+    }
+    @for (var i = 0; i < n; i++)
+    {
+        <text><text x="@(15+i*60)" y="@(150 -h[i])" text-anchor="middle">
+                @v[i]
+            </text>
+            <text x="@(15+i*60)" y="@(15)" text-anchor="middle">
+                @tit[i]
+            </text>
+        </text>
+    }
+</svg>
+@code{
+    [Parameter]
+    public string values { get; set; }
+    [Parameter]
+    public string colors { get; set; }
+    [Parameter]
+    public string titles { get; set; }
+    private String[] val = null;
+    private String[] col = null;
+    private String[] tit = null;
+    private int n = 0;
+    private int[] v, h;
+    protected override void OnInitialized()
+    {
+        values = values ?? "0,1,2,3,4,5,6,7,8";
+        colors = colors ?? "#ff0000, #00ff00, #0000ff, #0f0f0f, #0f0f00, #0f0000, #0fffff, #0000f0, #fffff0";
+        titles = titles ?? "title1, title2, title3, title4, title5, title6, title7, title8";
+        val = values.Split(",");
+        col = colors.Split(",");
+        tit = titles.Split(",");
+        n = Math.Min(val.Length, col.Length);
+        v = values.Split(",").Select(Int32.Parse).ToArray();
+        h = new int[v.Length];
+        for (int i = 0; i < v.Length; i++)
+        {
+            h[i] = (int)(v[i] * 100) / v.Max();
+        }
+    }
+}
